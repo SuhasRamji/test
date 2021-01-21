@@ -1,0 +1,7 @@
+newnormal:
+  - mysql+pymysql://root:qwerty@localhost/newnormal?charset=utf8
+  - newnormal
+
+new_tenant:
+  - mysql+pymysql://root:qwerty@localhost/new_tenant?charset=utf8
+  - new_tenant

@@ -138,3 +138,4 @@ Werkzeug==0.14.1
 widgetsnbextension==3.4.2
 wikipedia==1.4.0
 wrapt==1.11.2
+flask_restful

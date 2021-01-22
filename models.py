@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Sequence, create_engine, DateTime
 from sqlalchemy.orm import relationship, sessionmaker
 from datetime import datetime
+import pymysql
 
 app = Flask(__name__)
 

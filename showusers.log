@@ -780,3 +780,13 @@ WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 267-573-203
 INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 INFO:werkzeug:127.0.0.1 - - [21/Jan/2021 13:56:28] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 267-573-203
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Operation ran on the showusers by the user ()
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2021 17:06:08] "[35m[1mGET /users HTTP/1.1[0m" 500 -
+INFO:root:Operation ran on the showusers by the user ()
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2021 17:06:21] "[37mGET /users HTTP/1.1[0m" 200 -
+INFO:root:Operation ran on the showusers by the user ()
+INFO:werkzeug:127.0.0.1 - - [23/Jan/2021 17:06:32] "[37mGET /users HTTP/1.1[0m" 200 -

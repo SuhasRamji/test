@@ -5,8 +5,8 @@ from models import db
 
 #MYSQL_URI = 'mysql+pymysql://root:qwerty@localhost/{}?charset=utf8'
 def get_all_tenants():
-	with open(r'C:\Users\I354822\PycharmProjects\PoCProject\venv\config\db.yaml') as db_file:
-
+	#with open(r'C:\Users\I354822\PycharmProjects\PoCProject\venv\config\db.yaml') as db_file:
+	with open(r'config/db.yaml') as db_file:
 		tenants =  yaml.load(db_file, Loader=yaml.FullLoader)
 		return tenants
 

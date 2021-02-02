@@ -808,3 +808,114 @@ INFO:werkzeug: * Debugger PIN: 267-573-203
 INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 INFO:werkzeug: * Detected change in 'C:\\Users\\I354822\\PycharmProjects\\PoCProject\\venv\\models.py', reloading
 INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 267-573-203
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Operation ran on the showusers by the user ()
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:18:47] "[37mGET /users HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:18:58] "[31m[1mGET /login HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:19:24] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\I354822\\PycharmProjects\\PoCProject\\venv\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 267-573-203
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:44:52] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\I354822\\PycharmProjects\\PoCProject\\venv\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 267-573-203
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:46:21] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\I354822\\PycharmProjects\\PoCProject\\venv\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 267-573-203
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:46:48] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\I354822\\PycharmProjects\\PoCProject\\venv\\lib\\site-packages\\jwt\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 267-573-203
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:50:04] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\I354822\\PycharmProjects\\PoCProject\\venv\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 267-573-203
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:50:26] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\I354822\\PycharmProjects\\PoCProject\\venv\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 267-573-203
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:50:48] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\I354822\\PycharmProjects\\PoCProject\\venv\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 267-573-203
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\I354822\\PycharmProjects\\PoCProject\\venv\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 267-573-203
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:51:56] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\I354822\\PycharmProjects\\PoCProject\\venv\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 267-573-203
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:53:05] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\I354822\\PycharmProjects\\PoCProject\\venv\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 267-573-203
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:53:59] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\I354822\\PycharmProjects\\PoCProject\\venv\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 267-573-203
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:55:08] "[35m[1mGET /user HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:55:11] "[35m[1mGET /users HTTP/1.1[0m" 500 -
+INFO:root:Operation ran on the showusers by the user (<Users 1>,)
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:55:37] "[35m[1mGET /users HTTP/1.1[0m" 500 -
+INFO:root:Operation ran on the showusers by the user (<Users 1>,)
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:55:50] "[35m[1mGET /users HTTP/1.1[0m" 500 -
+INFO:root:Operation ran on the showusers by the user (<Users 1>,)
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:55:59] "[35m[1mGET /users HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 267-573-203
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Operation ran on the showusers by the user (<Users 1>,)
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:56:57] "[35m[1mGET /users HTTP/1.1[0m" 500 -
+INFO:root:Operation ran on the createUser by the user ()
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 18:57:13] "[35m[1mPOST /users HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\I354822\\PycharmProjects\\PoCProject\\venv\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 267-573-203
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Operation ran on the createUser by the user ()
+INFO:werkzeug: * Detected change in 'C:\\Users\\I354822\\PycharmProjects\\PoCProject\\venv\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 267-573-203
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Operation ran on the createUser by the user ()
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 19:03:09] "[37mPOST /users HTTP/1.1[0m" 200 -
+INFO:root:Operation ran on the showusers by the user ()
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 19:03:14] "[37mGET /users HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 19:03:42] "[37mPOST /users HTTP/1.1[0m" 200 -
+INFO:root:Operation ran on the createUser by the user ()
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 19:03:50] "[37mPOST /users HTTP/1.1[0m" 200 -
+INFO:root:Operation ran on the showusers by the user ()
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 19:03:54] "[37mGET /users HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2021 19:03:58] "[37mGET /users HTTP/1.1[0m" 200 -

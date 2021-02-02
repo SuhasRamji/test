@@ -14,7 +14,7 @@ from tenant_session import *
 
 
 app.debug = True
-app.config['SECRET_KEY'] = 'thisisasecretkey'
+#app.config['SECRET_KEY'] = 'thisisasecretkey'
 app.config['SQLALCHEMY_TRACE_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_BINDS'] = {}
 
@@ -56,7 +56,7 @@ def token_required(f):
 	@wraps(f)
 	def decorated(*args, **kwargs):
 		token = None
-		public_key = open(r'C:\Users\I354822\PycharmProjects\UserInfo\DB contents\jwt-key.pub').read()
+		public_key = open(r'C:\Users\I354822\user_jwt.pub').read()
 
 
 
@@ -80,12 +80,13 @@ def token_required(f):
 	return decorated
 #
 @app.before_request
-#@token_required
-def before_request():
+@token_required
+def before_request(current_user):
 	tenant_name = request.headers['name']
 	print(tenant_name)
 	g.tenant_session = get_tenant_session(tenant_name)
 	print(g.tenant_session)
+	print(current_user)
 
 
 @app.route('/users')
@@ -167,7 +168,7 @@ def updateUser(current_user, id):
 
 def login():
 
-	private_key = open(r'C:\Users\I354822\PycharmProjects\UserInfo\DB contents\jwt-key').read()
+	private_key = open(r'C:\Users\I354822\user_jwt').read()
 	print(private_key)
 	auth = request.authorization
 	print(auth.username)
@@ -179,12 +180,12 @@ def login():
 	if not user:
 		return make_response('Could not verify', 401, {'WWW-Authenticate': 'Basic realm="Login Required"'})
 
-	token = jwt.JWT().encode({'id':user.id,
-	                    'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=60)}, private_key, algorithm="RS256")
+	token = jwt.encode({'id':user.id,
+	                    'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=60)}, private_key, algorithm='RS256')
 
 	# decod = jwt.decode(token, app.config['SECRET_KEY'])
 	# print(decod)
-	return jsonify({'token': token.decode('UTF-8')})
+	return jsonify({'token':token})
 
 
 

@@ -56,7 +56,7 @@ def token_required(f):
 	@wraps(f)
 	def decorated(*args, **kwargs):
 		token = None
-		public_key = open(r'C:\Users\I354822\user_jwt.pub').read()
+		public_key = open(r'config/user_jwt.pub').read()
 
 
 
@@ -168,7 +168,7 @@ def updateUser(current_user, id):
 
 def login():
 
-	private_key = open(r'C:\Users\I354822\user_jwt').read()
+	private_key = open(r'config/user_jwt').read()
 	print(private_key)
 	auth = request.authorization
 	print(auth.username)

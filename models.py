@@ -11,8 +11,7 @@ app = Flask(__name__)
 
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:qwerty@localhost/new_tenant?charset=utf8'
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://suhas:qwerty@localhost:5432/Client1'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://hvdqeccloviaqz:7570a39b5330237a905a25665d201d03ca25de356eff1522f94b50ced18bfa4c' \
-                                        '@ec2-54-85-13-135.compute-1.amazonaws.com:5432/d38blvmp22htul'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://idknfcahjkdeew:96d23cee44a703633bd5f2176a4522ca5c420a526795c71de309ed3ed68ef382@ec2-54-158-1-189.compute-1.amazonaws.com:5432/d8vqkjri4dbsjo'
 db = SQLAlchemy(app)
 
 

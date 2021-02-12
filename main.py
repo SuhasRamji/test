@@ -11,6 +11,7 @@ import jwt
 from functools import wraps
 import logging
 from tenant_session import *
+from config.eureka_config import *
 
 
 app.debug = True
@@ -55,10 +56,12 @@ Signature
 def token_required(f):
 	@wraps(f)
 	def decorated(*args, **kwargs):
+		if request.endpoint == 'login':
+			return redirect(url_for('login'))
+			print(request.endpoint)
+
 		token = None
 		public_key = open(r'config/user_jwt.pub').read()
-
-
 
 		if 'x-access-token' in request.headers:
 			token = request.headers['x-access-token']
@@ -80,19 +83,20 @@ def token_required(f):
 	return decorated
 #
 @app.before_request
-@token_required
-def before_request(current_user):
-	tenant_name = request.headers['name']
-	print(tenant_name)
-	g.tenant_session = get_tenant_session(tenant_name)
-	print(g.tenant_session)
-	print(current_user)
+#@token_required
+def before_request():
+		tenant_name = request.headers['name']
+		print(tenant_name)
+		g.tenant_session = get_tenant_session(tenant_name)
+		print(g.tenant_session)
+
 
 
 @app.route('/users')
 @marshal_with(res_field_list)
 @log_decorator
 def showusers():
+
 	"""Gives the list of all the users"""
 	users_list = ShowAllUsers()
 	return users_list
@@ -124,23 +128,6 @@ def createUser():
 		raise BadRequest("Invalid Email address")
 
 
-# @app.route('/tenantUsers',methods=['GET'])
-# #@marshal_with(res_field_list)
-# def tenants():
-
-	#user = {}
-	# current_user = []
-	# for i in tenant_user:
-	# 	user['id'] = i.id
-	# 	user['name'] = i.name
-	# 	user['mail'] = i.mail
-	# 	user['mobile'] = i.mobile
-	# 	user['address'] = i.address
-	# 	current_user.append(user)
-	# 	print(current_user)
-	#
-	# return {'Users':current_user}
-
 @app.route('/users/<id>', methods = ['DELETE'])
 @log_decorator
 def deleteUser(current_user, id):
@@ -164,7 +151,7 @@ def updateUser(current_user, id):
 	updatedUser = UpdateUser(req, id)
 	return updatedUser
 
-@app.route('/login',methods=['GET'])
+@app.route('/login',methods=['POST'])
 
 def login():
 
@@ -218,4 +205,9 @@ def bad_request(e):
 	}
 
 if __name__ == '__main__':
+
 	app.run()
+	
+	
+
+
